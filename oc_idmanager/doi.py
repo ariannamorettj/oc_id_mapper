@@ -21,16 +21,16 @@ import re
 from re import match, sub
 from urllib.parse import quote, unquote
 
-from oc_ds_converter.oc_idmanager.base import IdentifierManager
-from oc_ds_converter.oc_idmanager.isbn import ISBNManager
-from oc_ds_converter.oc_idmanager.issn import ISSNManager
-from oc_ds_converter.oc_idmanager.orcid import ORCIDManager
-from oc_ds_converter.oc_idmanager.support import call_api
+from oc_idmanager.base import IdentifierManager
+from oc_idmanager.isbn import ISBNManager
+from oc_idmanager.issn import ISSNManager
+from oc_idmanager.orcid import ORCIDManager
+from oc_idmanager.support import call_api
 
-from oc_ds_converter.metadata_manager import MetadataManager
-from oc_ds_converter.oc_idmanager.oc_data_storage.storage_manager import StorageManager
-from oc_ds_converter.oc_idmanager.oc_data_storage.in_memory_manager import InMemoryStorageManager
-# from oc_ds_converter.oc_idmanager.oc_data_storage.sqlite_manager import SqliteStorageManager
+from metadata_manager import MetadataManager
+from oc_idmanager.oc_data_storage.storage_manager import StorageManager
+from oc_idmanager.oc_data_storage.in_memory_manager import InMemoryStorageManager
+# from oc_idmanager.oc_data_storage.sqlite_manager import SqliteStorageManager
 from typing import Optional, Type, Tuple
 
 
